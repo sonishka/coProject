@@ -17,13 +17,13 @@
     <color name="roseBackground">#99696d</color>
     <color name="roseChamp">#a19288</color>
     <color name="MyRose">#f18986</color>
-    <color name="Myblue">#f9f9c6</color>
+    <color name="Myblue">#7ef3c3a9</color>
     <color name="Vert">#d7efd7</color>
     <color name="orange">#f1a369</color>
-    <color name="bluetp">#fc2f3c</color>
-    <color name="buee">#12c5c6</color>
+    <color name="bluetp">#85caca</color>
+    <color name="buee">#c7e0d4</color>
     <color name="griis">#c0c7bf</color>
-    <color name="jaune">#c4cd36</color>
+    <color name="jaune">#e4e0da</color>
     <color name="mauve">#c035c9</color>
     <color name="buep">#FF2434AE</color>
 </resources>

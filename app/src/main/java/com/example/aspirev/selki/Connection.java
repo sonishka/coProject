@@ -11,21 +11,17 @@ import android.widget.Button;
  */
 
 public class Connection extends Activity{
-    private Button connect;
+
     @Override
-    public void onCreate(Bundle savedInstanceState){
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.connexion);
-        connect=(Button) findViewById(R.id.email_sign_in_button);
-        connect.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                goToNextActivity();
-            }
-        });
+        Button btn1 = (Button) findViewById(R.id.email_sign_in_button);
+       if(btn1.callOnClick()) {
+           Intent intent = new Intent(this, Inscription.class);
+           startActivity(intent);
+       }
+
     }
-    private void goToNextActivity(){
-        Intent intent = new Intent(Connection.this ,Acceuil.class );
-        startActivity(intent);
-    }
+
 }
