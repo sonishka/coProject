@@ -13,6 +13,7 @@
         android:roundIcon="@drawable/slkni"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <uses-library android:name="com.google.android.maps" />
         <activity
             android:name=".Connection"
             android:label="@string/app_name"
@@ -24,5 +25,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Inscription"/>
+        <activity android:name=".MainActivity"/>
+
     </application>
 </manifest>

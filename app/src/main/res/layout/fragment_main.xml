@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/jaune"
+    android:background="@color/common_google_signin_btn_text_dark_default"
     android:orientation="vertical"
     android:paddingTop="60dp">
 
@@ -13,14 +13,14 @@
         android:weightSum="2">
 
         <Button
-            android:id="@+id/button13"
+            android:id="@+id/id_chercher"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Chercher un covoiturage" />
 
         <Button
-            android:id="@+id/button14"
+            android:id="@+id/id_proposer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"

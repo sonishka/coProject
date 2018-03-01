@@ -1,4 +1,5 @@
 package com.example.aspirev.selki;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -8,9 +9,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+
+import com.example.aspirev.selki.ChercherCovoiturage;
+import com.example.aspirev.selki.Contactez_nous;
+import com.example.aspirev.selki.MainFragment;
+import com.example.aspirev.selki.ModifierInfoPersonnelle;
+import com.example.aspirev.selki.Prefrences;
+import com.example.aspirev.selki.ProposerCovoiturage;
+import com.example.aspirev.selki.R;
+import com.example.aspirev.selki.Vehicule;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener{
     NavigationView navigationView =null ;
     Toolbar toolbar =null ;
 
@@ -34,7 +46,10 @@ public class MainActivity extends AppCompatActivity
 
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
     }
+
 
     @Override
     public void onBackPressed() {
@@ -97,4 +112,6 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
 }
