@@ -1,12 +1,13 @@
 
-<LinearLayout
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="3"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:paddingTop="60dp">
 
     <TextView
         android:id="@+id/textView13"
@@ -205,4 +206,4 @@
             android:layout_centerHorizontal="true" />
     </RelativeLayout>
 
-</LinearLayout>
+</FrameLayout>

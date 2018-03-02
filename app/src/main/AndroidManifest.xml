@@ -15,7 +15,7 @@
         android:theme="@style/AppTheme">
         <uses-library android:name="com.google.android.maps" />
         <activity
-            android:name=".Connection"
+            android:name="Activities.Connection"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -24,7 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Inscription"/>
+        <activity android:name="Activities.Inscription"/>
         <activity android:name=".MainActivity"/>
 
     </application>

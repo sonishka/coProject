@@ -1,5 +1,4 @@
 package com.example.aspirev.selki;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -9,17 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
-import com.example.aspirev.selki.ChercherCovoiturage;
-import com.example.aspirev.selki.Contactez_nous;
-import com.example.aspirev.selki.MainFragment;
-import com.example.aspirev.selki.ModifierInfoPersonnelle;
-import com.example.aspirev.selki.Prefrences;
-import com.example.aspirev.selki.ProposerCovoiturage;
-import com.example.aspirev.selki.R;
-import com.example.aspirev.selki.Vehicule;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener{
@@ -68,44 +57,54 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.vehicule) {
-            Vehicule fragment = new Vehicule();
+            VehiculeFragment fragment = new VehiculeFragment();
             android.support.v4.app.FragmentTransaction FragmentTransaction = getSupportFragmentManager().beginTransaction() ;
             FragmentTransaction.replace(R.id.fragment_container,fragment);
             FragmentTransaction.commit();
 
 
         } else if (id == R.id.modifierinfoperso) {
-           ModifierInfoPersonnelle fragment = new ModifierInfoPersonnelle();
+           ModifierInfoPersonnelleFragment fragment = new ModifierInfoPersonnelleFragment();
             android.support.v4.app.FragmentTransaction FragmentTransaction = getSupportFragmentManager().beginTransaction() ;
             FragmentTransaction.replace(R.id.fragment_container,fragment);
             FragmentTransaction.commit();
 
 
         } else if (id == R.id.cherchercovoiturage) {
-            ChercherCovoiturage fragment = new ChercherCovoiturage();
+            ChercherCovoiturageFragment fragment = new ChercherCovoiturageFragment();
             android.support.v4.app.FragmentTransaction FragmentTransaction = getSupportFragmentManager().beginTransaction() ;
             FragmentTransaction.replace(R.id.fragment_container,fragment);
             FragmentTransaction.commit();
 
         } else if (id == R.id.proposercovoiturage) {
-            ProposerCovoiturage fragment = new ProposerCovoiturage();
+            ProposerCovoiturageFragment fragment = new ProposerCovoiturageFragment();
             android.support.v4.app.FragmentTransaction FragmentTransaction = getSupportFragmentManager().beginTransaction() ;
             FragmentTransaction.replace(R.id.fragment_container,fragment);
             FragmentTransaction.commit();
 
         } else if (id == R.id.contactez) {
-            Contactez_nous fragment = new Contactez_nous();
+            Contactez_nousFragment fragment = new Contactez_nousFragment();
             android.support.v4.app.FragmentTransaction FragmentTransaction = getSupportFragmentManager().beginTransaction() ;
             FragmentTransaction.replace(R.id.fragment_container,fragment);
             FragmentTransaction.commit();
 
 
         } else if (id == R.id.prefrences) {
-            Prefrences fragment = new Prefrences();
+            PrefrencesFragment fragment = new PrefrencesFragment();
             android.support.v4.app.FragmentTransaction FragmentTransaction = getSupportFragmentManager().beginTransaction() ;
             FragmentTransaction.replace(R.id.fragment_container,fragment);
             FragmentTransaction.commit();
 
+        }else if (id==R.id.avenir){
+            MesTrajetsAvenirFragment fragment = new MesTrajetsAvenirFragment();
+            android.support.v4.app.FragmentTransaction FragmentTransaction = getSupportFragmentManager().beginTransaction() ;
+            FragmentTransaction.replace(R.id.fragment_container,fragment);
+            FragmentTransaction.commit();
+        }else if (id==R.id.res){
+            MesReservationsFragment fragment = new MesReservationsFragment();
+            android.support.v4.app.FragmentTransaction FragmentTransaction = getSupportFragmentManager().beginTransaction() ;
+            FragmentTransaction.replace(R.id.fragment_container,fragment);
+            FragmentTransaction.commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

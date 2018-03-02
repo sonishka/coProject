@@ -11,10 +11,10 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ProposerCovoiturage extends Fragment {
+public class ModifierInfoPersonnelleFragment extends Fragment {
 
 
-    public ProposerCovoiturage() {
+    public ModifierInfoPersonnelleFragment() {
         // Required empty public constructor
     }
 
@@ -23,7 +23,7 @@ public class ProposerCovoiturage extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_proposer_covoiturage, container, false);
+        return inflater.inflate(R.layout.fragment_modifier_info_personnelle, container, false);
     }
 
 }
